@@ -1,0 +1,38 @@
+{
+  "id": "ewing-rna-meta-analysis-203",
+  "title": "Cross-dataset meta-analysis (where valid)",
+  "project": "ewing-expression-reanalysis",
+  "type": "research",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "meta-analysis"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "A cross-dataset meta-analysis is delivered only where statistically valid; a reasoned decision NOT to meta-analyze is an acceptable, honest outcome (PLAN §8 M2). No over-claiming. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Perform a cross-dataset meta-analysis where statistically valid, or document a reasoned decision not to, with explicit limitations.",
+  "acceptanceCriteria": [
+    "Meta-analysis is performed only where validity conditions are met; otherwise a reasoned decision not to meta-analyze is documented.",
+    "Heterogeneity and confounding are quantified and reported.",
+    "Results framed as research-only with explicit limitations; provenance complete.",
+    "Domain-reviewer sign-off recorded."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "output/meta-analysis.md (cross-dataset meta-analysis where valid, or reasoned decision not to).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

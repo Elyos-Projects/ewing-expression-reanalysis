@@ -1,0 +1,39 @@
+{
+  "id": "ewing-rna-microarray-405",
+  "title": "Legacy microarray series reanalysis module",
+  "project": "ewing-expression-reanalysis",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "microarray",
+    "legacy-data"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "An optional module to reanalyze legacy open Ewing microarray series, included only if M0 decides arrays are in-scope (PLAN backlog/M4). Same license/consent and provenance rules apply. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Add a reanalysis module for legacy open Ewing microarray series (normalization, QC, expression matrices) conditional on an in-scope decision.",
+  "acceptanceCriteria": [
+    "Module normalizes and QCs ≥1 open microarray series with a reproducible one-command run.",
+    "Inclusion is conditional on a recorded M0 scope decision that arrays are in-scope.",
+    "Outputs carry provenance manifests; only license-cleared series are processed.",
+    "Commit is DCO signed-off; results labelled research-only."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A pull request adding the legacy microarray reanalysis module (conditional on arrays being in-scope).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

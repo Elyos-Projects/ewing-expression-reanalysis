@@ -1,0 +1,39 @@
+{
+  "id": "ewing-rna-maintenance-404",
+  "title": "Scheduled reference/dependency refresh + CI canary",
+  "project": "ewing-expression-reanalysis",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "maintenance",
+    "ci"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Sustainability cadence: a scheduled refresh of references/dependencies plus a CI canary that catches drift before it breaks reproducibility (PLAN backlog/M4). Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Add a scheduled reference/dependency-refresh workflow and a CI canary that detects reproducibility drift on a regular cadence.",
+  "acceptanceCriteria": [
+    "A scheduled workflow refreshes pinned references/dependencies and opens a PR for review (no auto-merge).",
+    "A CI canary re-runs the fixture on a cadence and flags reproducibility drift.",
+    "Pins remain digest-based; no ':latest' introduced by the refresh.",
+    "Commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A pull request adding scheduled reference/dependency refresh + a CI canary.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

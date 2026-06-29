@@ -1,0 +1,39 @@
+{
+  "id": "ewing-rna-fair-audit-304",
+  "title": "FAIR self-assessment + provenance completeness audit",
+  "project": "ewing-expression-reanalysis",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "fair",
+    "provenance"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Before release sign-off, a FAIR self-assessment plus a provenance-completeness audit confirm the project is Findable, Accessible, Interoperable, Reusable and 100% provenance-traced (PLAN §8 M3). Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Complete a FAIR self-assessment and a provenance-completeness audit, confirming 100% provenance coverage and documenting any gaps.",
+  "acceptanceCriteria": [
+    "A FAIR checklist is completed with evidence for each principle.",
+    "Provenance completeness is audited; coverage is reported and gaps are listed with remediation.",
+    "Audit confirms no restricted-source bytes are redistributed.",
+    "Reviewer sign-off recorded."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "output/fair-audit.md (FAIR self-assessment + provenance-completeness audit).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

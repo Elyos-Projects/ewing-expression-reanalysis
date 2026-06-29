@@ -1,0 +1,39 @@
+{
+  "id": "ewing-rna-signature-cli-402",
+  "title": "Signature-scoring CLI on user-supplied open data",
+  "project": "ewing-expression-reanalysis",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "cli",
+    "gene-signature"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "A research-only CLI that scores the reproduced EWSR1-FLI1 signature on user-supplied OPEN data, and refuses non-open or clinical use (PLAN backlog/M4). The refusal behaviour is a binding guardrail, not a feature toggle. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Build a signature-scoring CLI that operates only on user-supplied open data and refuses non-open/clinical inputs, with research-only framing.",
+  "acceptanceCriteria": [
+    "CLI scores the reproduced signature on user-supplied open expression data with a documented one-command run.",
+    "CLI refuses (with a clear message) non-open or clinical/diagnostic use; the refusal path is tested.",
+    "Output labelled research-only; no clinical interpretation produced.",
+    "Commit is DCO signed-off; no secrets bundled."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A pull request adding the research-only signature-scoring CLI (refuses non-open/clinical use).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

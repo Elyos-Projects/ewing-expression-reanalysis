@@ -1,0 +1,38 @@
+{
+  "id": "ewing-rna-harmonize-201",
+  "title": "Harmonize ≥5 datasets (matrices + metadata)",
+  "project": "ewing-expression-reanalysis",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "data-harmonization"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Cross-dataset analysis requires harmonizing ≥5 datasets to a common gene space and annotation version while preserving per-cell-of-origin provenance (PLAN §8 M2). Redistribution is gated on per-source license. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Harmonize ≥5 reprocessed datasets onto a common gene space + annotation version, preserving provenance, and publish matrices only where every source permits redistribution.",
+  "acceptanceCriteria": [
+    "At least 5 datasets harmonized to a common gene space + annotation version; provenance per cell of origin preserved.",
+    "Redistribution of harmonized matrices only where every contributing source permits; otherwise recipe + accessions are published instead.",
+    "Harmonization is reproducible from a one-command run with a provenance manifest.",
+    "Domain-reviewer sign-off recorded."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "output/harmonized/ (common-gene-space matrices + harmonized metadata, or recipe+accessions where redistribution is barred).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "ewing-rna-validation-104",
+  "title": "Validate vs ≥1 published result (concordance)",
+  "project": "ewing-expression-reanalysis",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "validation"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "External validity requires reproducing at least one published Ewing DE/expression result with a quantitative concordance metric (PLAN §8 M1). Discrepancies are reported honestly, without claiming the original was wrong absent evidence. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Reproduce at least one published Ewing DE/expression result and report a quantitative concordance metric, documenting discrepancies as findings.",
+  "acceptanceCriteria": [
+    "At least 1 published Ewing DE/expression result reproduced with a quantitative concordance metric (rank correlation / DE-set overlap).",
+    "Discrepancies documented as findings with caveats; no claim the original was wrong absent evidence.",
+    "Validation report traces every figure/number to a provenance manifest.",
+    "Domain-reviewer sign-off recorded."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "output/validation-report.md (concordance metric vs ≥1 published Ewing result + caveats).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

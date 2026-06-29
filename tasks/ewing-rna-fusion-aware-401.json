@@ -1,0 +1,39 @@
+{
+  "id": "ewing-rna-fusion-aware-401",
+  "title": "Explore fusion-aware quantification (research only)",
+  "project": "ewing-expression-reanalysis",
+  "type": "research",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "fusion-detection",
+    "method-exploration"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Method exploration of fusion-aware quantification for EWSR1-FLI1 transcripts, explicitly NOT a diagnostic (PLAN backlog/M4). Research-only framing is binding. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Explore fusion-aware quantification approaches on open Ewing data as a methods study, documenting feasibility and limitations without any diagnostic claim.",
+  "acceptanceCriteria": [
+    "Fusion-aware quantification approaches are evaluated on open data with a reproducible recipe.",
+    "Findings are framed as method exploration, explicitly NOT a diagnostic or clinical tool.",
+    "Limitations and provenance are documented; no patient-facing claims.",
+    "Domain-reviewer sign-off recorded."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "output/fusion-aware-exploration.md (research-only feasibility study of fusion-aware quantification).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ewing-rna-scrna-handoff-403",
+  "title": "Single-cell integration handoff spec",
+  "project": "ewing-expression-reanalysis",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "single-cell",
+    "interoperability"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "A handoff spec defining how bulk reanalysis outputs feed a separate single-cell integration project (ewing-single-cell-atlas), keeping scope boundaries explicit (PLAN backlog/M4). Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Specify the single-cell integration handoff: interfaces, data formats, provenance contracts and scope boundaries between this project and ewing-single-cell-atlas.",
+  "acceptanceCriteria": [
+    "Handoff spec defines data formats, metadata/provenance contracts and versioning for the single-cell project.",
+    "Scope boundaries are explicit (what this project does and does not provide).",
+    "Spec preserves license/consent constraints across the handoff.",
+    "Reviewer sign-off recorded."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "docs/scrna-handoff-spec.md (single-cell integration handoff specification).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

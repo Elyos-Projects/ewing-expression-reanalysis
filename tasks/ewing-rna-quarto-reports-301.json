@@ -1,0 +1,39 @@
+{
+  "id": "ewing-rna-quarto-reports-301",
+  "title": "Quarto report site (reproducible)",
+  "project": "ewing-expression-reanalysis",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "reporting",
+    "fair"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "A reproducible Quarto report site rebuilds from source in CI with every figure/table traceable to provenance, carrying prominent research-not-medical-advice framing (PLAN §8 M3). Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Build a Quarto report site that rebuilds from source in CI, traces every figure/table to a provenance manifest, and carries research-only framing plus full citations.",
+  "acceptanceCriteria": [
+    "Report site rebuilds from source in CI; every figure/table traces to a provenance manifest.",
+    "Prominent 'research, not medical advice' framing; full data + software citations.",
+    "No restricted-source bytes embedded in the site.",
+    "Domain-reviewer sign-off recorded."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "docs/report-site/ (reproducible Quarto report site rebuilt in CI).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

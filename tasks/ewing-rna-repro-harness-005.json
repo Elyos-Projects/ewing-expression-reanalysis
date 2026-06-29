@@ -1,0 +1,38 @@
+{
+  "id": "ewing-rna-repro-harness-005",
+  "title": "Containers (digest-pinned) + lockfiles + provenance lint",
+  "project": "ewing-expression-reanalysis",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "devops"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Reproducibility requires digest-pinned containers, conda/renv lockfiles and a provenance lint that fails CI on incomplete manifests (PLAN §6/§8). This harness is a prerequisite for any end-to-end reproduction. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Add the reproducibility harness: digest-pinned container definitions, conda/renv lockfiles, seed control, and a provenance-manifest lint wired into CI.",
+  "acceptanceCriteria": [
+    "All containers are pinned by digest; no ':latest' tags anywhere in the repo or CI.",
+    "Conda/renv (or equivalent) lockfiles are committed and used by the pipeline stub.",
+    "A provenance lint validates provenance.json against the ratified spec and fails CI on missing/invalid fields.",
+    "No secrets, tokens, or API keys appear in the repo, logs, or CI output; commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A pull request adding digest-pinned containers, lockfiles, seed control, and a CI provenance-lint gate.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
