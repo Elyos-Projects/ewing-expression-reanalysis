@@ -1,0 +1,38 @@
+{
+  "id": "ewing-rna-datasheet-template-004",
+  "title": "Datasheet + provenance-manifest spec",
+  "project": "ewing-expression-reanalysis",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "provenance"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every reprocessed dataset must ship a datasheet and a machine-checkable provenance manifest (PLAN §6). This task ratifies the templates/specs that all later data tasks must conform to. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Define a datasheet-for-datasets template and a provenance-manifest (provenance.json) schema/spec covering inputs, outputs, container digests, versions and seeds.",
+  "acceptanceCriteria": [
+    "A datasheet.md template is specified with required fields (source, license, consent, assay, sample governance, caveats).",
+    "A provenance.json spec defines required keys: pipelineVersion, containerDigests[], inputChecksums[], outputChecksums[], seed, generatedAt, parameters.",
+    "Templates include a research-only / not-medical-advice framing and are referenced from the README.",
+    "Spec is concrete enough to be machine-validated by a later CI lint gate."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "docs/datasheet-template.md + docs/provenance-manifest-spec.md (ratified templates/specs).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

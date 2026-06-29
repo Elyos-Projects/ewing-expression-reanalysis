@@ -1,0 +1,38 @@
+{
+  "id": "ewing-rna-qc-module-102",
+  "title": "QC/MultiQC + outlier + inclusion-list module",
+  "project": "ewing-expression-reanalysis",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "quality-control"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "QC and sample governance (FastQC/MultiQC, library complexity, mapping rate, outlier detection) produce an auditable inclusion list for downstream DE (PLAN §3). Sample inclusion must be transparent and reproducible. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Add a QC module (FastQC/MultiQC aggregation, outlier detection, and a recorded sample inclusion/exclusion list) on top of the quantification pipeline.",
+  "acceptanceCriteria": [
+    "MultiQC report aggregates per-sample QC (mapping rate, library complexity, duplication) for each dataset.",
+    "Outlier/low-quality samples are detected by documented criteria and an inclusion list is recorded.",
+    "Inclusion/exclusion decisions are reproducible and traceable to QC metrics.",
+    "Commit is DCO signed-off; no clinical interpretation of QC results."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A pull request adding the QC/MultiQC + outlier-detection + inclusion-list module.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

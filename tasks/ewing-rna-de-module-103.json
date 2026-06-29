@@ -1,0 +1,39 @@
+{
+  "id": "ewing-rna-de-module-103",
+  "title": "DE module (DESeq2 + edgeR/limma)",
+  "project": "ewing-expression-reanalysis",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "differential-expression",
+    "statistics"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Differential-expression with ≥2 independent engines lets us report agreement and avoid single-method artefacts (PLAN §8 M1). Results are research-only with no clinical/biomarker framing. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Implement a differential-expression module running ≥2 engines (DESeq2 + edgeR/limma) on the same contrast, reporting cross-engine agreement.",
+  "acceptanceCriteria": [
+    "At least 2 DE engines produce results for the same contrast; agreement between engines is reported.",
+    "Contrasts use only published/open sample metadata; the inclusion list is recorded.",
+    "No clinical/biomarker language; results are labelled research-only.",
+    "Commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A pull request adding the differential-expression module (DESeq2 + edgeR/limma) with cross-engine agreement reporting.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

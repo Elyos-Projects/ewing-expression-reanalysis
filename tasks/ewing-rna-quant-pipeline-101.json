@@ -1,0 +1,39 @@
+{
+  "id": "ewing-rna-quant-pipeline-101",
+  "title": "nf-core-based quant pipeline (≥3 datasets)",
+  "project": "ewing-expression-reanalysis",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "rna-seq",
+    "nextflow"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The core third-party-runnable quantification pipeline (nf-core/rnaseq backbone) that scales the M0 reproduction to ≥3 open datasets (PLAN §8 M1). Reproducibility and license-respect are mandatory. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Build a Nextflow (nf-core/rnaseq-based) quantification pipeline that runs on ≥3 open Ewing datasets with pinned references, digest-pinned containers, lockfiles and seeds.",
+  "acceptanceCriteria": [
+    "Runs on at least 3 open datasets via Nextflow (nf-core/rnaseq backbone); references pinned by release + checksum.",
+    "Prefers recount3/ARCHS4 reprocessed inputs where available; re-quantifies from open SRA/ENA only when license permits.",
+    "Reproducible: digest-pinned containers + lockfiles + seeds; documented one-command run.",
+    "Commit is DCO signed-off; no secrets in repo or logs."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A pull request adding the nf-core-based quantification pipeline running on ≥3 open datasets.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

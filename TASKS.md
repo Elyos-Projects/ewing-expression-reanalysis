@@ -238,3 +238,35 @@ Complete, schema-valid Task JSON for the first M0 task (`ewing-rna-repo-scaffold
 - All `verifiedNeed: false`; all `urgent: false`; no `high`-risk tasks (patient-facing out of
   scope); funded lane unused in the scheduled set (would require `fundedBudgetUsd` if added for
   re-quantification).
+
+---
+
+## Generated task index
+
+All 24 backlog rows are now materialized as schema-valid `tasks/<id>.json` (validated against
+`packages/schema/src/schemas.ts`; `filename == id`; no duplicate ids; no extra keys). The
+machine-readable JSON set — not this table — is what the Elyos CLI executes.
+
+**Fan-out:** none. Each `tasks/*.json` is a single representative task per backlog row. The
+candidate-dataset dimension ("≥15 open transcriptomes", "≥3 / ≥5 datasets") is **not** enumerated
+to named accessions in `PLAN.md`/`TASKS.md`, so no per-dataset fan-out was fabricated; the
+catalog/license-audit/harmonize tasks bound that set at execution time once sources are verified.
+Per-item dataset tasks expand on catalog + license-audit confirmation (M0).
+
+**Guardrails carried into every task:** open-access / de-identified data only; controlled-access
+(dbGaP/EGA/biobanks) out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only;
+research-only, not medical advice; provenance on every assertion. No `high`-risk / patient-facing
+tasks were authored (out of scope per PLAN §5/§8).
+
+| Milestone | Task ids |
+|---|---|
+| M0 | `ewing-rna-repo-scaffold-001` (seed), `ewing-rna-data-catalog-002`, `ewing-rna-license-audit-003`, `ewing-rna-datasheet-template-004`, `ewing-rna-repro-harness-005`, `ewing-rna-reference-repro-006` |
+| M1 | `ewing-rna-quant-pipeline-101`, `ewing-rna-qc-module-102`, `ewing-rna-de-module-103`, `ewing-rna-validation-104`, `ewing-rna-provenance-manifest-105` |
+| M2 | `ewing-rna-harmonize-201`, `ewing-rna-batch-correction-202`, `ewing-rna-meta-analysis-203`, `ewing-rna-signature-204` |
+| M3 | `ewing-rna-quarto-reports-301`, `ewing-rna-zenodo-release-302`, `ewing-rna-steward-outreach-303`, `ewing-rna-fair-audit-304` |
+| M4 (backlog) | `ewing-rna-fusion-aware-401`, `ewing-rna-signature-cli-402`, `ewing-rna-scrna-handoff-403`, `ewing-rna-maintenance-404`, `ewing-rna-microarray-405` |
+
+Acceptance criteria for rows not already itemized above (002, 004, 005, 101, 102, 105, 201, 202,
+203, 301, 302, 303, 304, 401–405) were authored in their JSON from each milestone's Definition of
+Done and row intent; the explicitly-itemized "key tasks" criteria above were reused verbatim into
+their JSON.

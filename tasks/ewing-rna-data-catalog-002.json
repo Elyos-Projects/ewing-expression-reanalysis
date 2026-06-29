@@ -1,0 +1,37 @@
+{
+  "id": "ewing-rna-data-catalog-002",
+  "title": "Catalog ≥15 candidate open Ewing transcriptomes",
+  "project": "ewing-expression-reanalysis",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "A provenance-first dataset catalog is the backbone of a reproducible Ewing Sarcoma reanalysis (PLAN §3/§8). Before any reprocessing, we enumerate candidate PUBLIC transcriptome series so downstream license, datasheet and reproduction work has a stable, auditable list. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Produce a structured catalog of at least 15 candidate open-access Ewing Sarcoma RNA-seq/expression series (accessions, source repository, assay, sample counts, putative license) with provenance for each entry.",
+  "acceptanceCriteria": [
+    "At least 15 candidate open Ewing transcriptome series catalogued with accession, source repository (GEO/SRA/ENA/recount3/ARCHS4), assay type, and sample count.",
+    "Each entry records a putative license and a provenance pointer (URL/accession) for later verification.",
+    "Controlled-access (dbGaP/EGA/biobank) series are excluded from the catalog or explicitly flagged out-of-scope.",
+    "Catalog is machine-readable (CSV/JSON) and committed under output/ with a short README."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "output/dataset-catalog.csv (machine-readable catalog of ≥15 candidate open Ewing transcriptomes + README).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

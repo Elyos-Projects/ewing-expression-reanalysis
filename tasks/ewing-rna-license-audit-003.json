@@ -1,0 +1,39 @@
+{
+  "id": "ewing-rna-license-audit-003",
+  "title": "Per-source license + consent audit",
+  "project": "ewing-expression-reanalysis",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "data-governance",
+    "licensing"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Redistribution and reprocessing decisions hinge on a rigorous, two-reviewer license + consent audit of every catalogued source (PLAN §7). This gate prevents license/consent violations before any data is reprocessed or redistributed. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Audit every source in the dataset catalog for license, consent terms and redistribution status, recording a per-source ruling with rationale and a second-reviewer verification.",
+  "acceptanceCriteria": [
+    "Every source in the catalog has a license field, a licenseVerifiedBy (second reviewer), and a redistributionAllowed ruling with written rationale.",
+    "COSMIC/OncoKB/MSigDB-restricted sources are explicitly marked recipe-reference-only; dbGaP/EGA/biobank sources are marked out-of-scope.",
+    "Any ambiguous-consent or ambiguous-license dataset is marked default-exclude pending resolution.",
+    "Audit is committed as a reviewable document with per-source provenance."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "output/license-audit.md (per-source license + consent rulings with second-reviewer verification).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ewing-rna-batch-correction-202",
+  "title": "Batch correction + batch-vs-biology confound report",
+  "project": "ewing-expression-reanalysis",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "batch-correction",
+    "statistics"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Honest cross-dataset work demands quantifying batch vs biology before and after correction and discussing over-correction risk (PLAN §8 M2). Confounding must be reported, not hidden. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Add batch correction with a confound report that quantifies batch vs biology before/after correction and discusses over-correction risk.",
+  "acceptanceCriteria": [
+    "Confound report quantifies batch vs biology before and after correction.",
+    "Over-correction risk is explicitly discussed with diagnostics.",
+    "Correction is reproducible with a provenance manifest; method and parameters recorded.",
+    "Commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A pull request adding batch correction plus a batch-vs-biology confound report.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

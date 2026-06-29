@@ -1,0 +1,39 @@
+{
+  "id": "ewing-rna-steward-outreach-303",
+  "title": "Outreach to ≥3 candidate stewards (logged)",
+  "project": "ewing-expression-reanalysis",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "partnerships",
+    "governance"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Real-world impact is gated on a steward who actually uses an output; this task begins and logs outreach to ≥3 candidate labs/foundations (PLAN §2/§8 M3). A confirmed use flips that outcome's verifiedNeed to true.",
+  "objective": "Contact ≥3 candidate stewards (labs/foundations) and log responses in governance/partners.md, noting that any confirmed use flips the relevant outcome's verifiedNeed to true.",
+  "acceptanceCriteria": [
+    "At least 3 candidate labs/foundations are contacted; responses are logged in governance/partners.md.",
+    "Any confirmed use flips that outcome's verifiedNeed to true (recorded).",
+    "Outreach messaging is accurate and non-overclaiming (research, not medical advice).",
+    "No private contact data committed beyond what is consented/public."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "governance/partners.md (logged outreach to ≥3 candidate stewards + responses).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

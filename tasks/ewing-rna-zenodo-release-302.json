@@ -1,0 +1,39 @@
+{
+  "id": "ewing-rna-zenodo-release-302",
+  "title": "Zenodo DOI + WorkflowHub entry + release freeze",
+  "project": "ewing-expression-reanalysis",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "release",
+    "fair"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "A citable FAIR release: a tagged release minted with a Zenodo DOI plus a WorkflowHub entry, with an audit ensuring no restricted-source bytes are included (PLAN §8 M3). Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Mint a tagged release with a Zenodo DOI and a WorkflowHub entry, with checksummed artifacts and a restricted-source audit.",
+  "acceptanceCriteria": [
+    "A tagged release is minted with a Zenodo DOI; a WorkflowHub entry is created; artifacts are checksummed.",
+    "No restricted-source bytes are in the release (audit passes).",
+    "Release notes link provenance manifests and citations.",
+    "Commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A pull request adding the release freeze (Zenodo DOI + WorkflowHub entry + checksummed artifacts).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

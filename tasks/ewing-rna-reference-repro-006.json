@@ -1,0 +1,37 @@
+{
+  "id": "ewing-rna-reference-repro-006",
+  "title": "Reproduce ONE open dataset end-to-end",
+  "project": "ewing-expression-reanalysis",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The cold-start proof: take ONE license-clean open Ewing dataset from acquisition through quantification, QC and provenance on a clean checkout (PLAN §8 M0 exit). Demonstrates the harness works end-to-end before scaling. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Reproduce one open, license-cleared Ewing dataset end-to-end (acquisition → quantification → QC → provenance) with a complete provenance.json and a one-command re-run.",
+  "acceptanceCriteria": [
+    "One open dataset is quantified end-to-end (acquisition → quant → QC → provenance) using only license-cleared inputs.",
+    "A complete provenance.json is emitted (input/output checksums, container digests, tool versions, seed).",
+    "A one-command re-run is documented and verified by a reviewer on a clean checkout.",
+    "Only recipe + accessions are redistributed where the source license forbids redistributing bytes."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "output/reference-repro/ (quantified matrices + QC + provenance.json for one open dataset).",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

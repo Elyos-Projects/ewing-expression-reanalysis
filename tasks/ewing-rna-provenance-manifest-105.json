@@ -1,0 +1,38 @@
+{
+  "id": "ewing-rna-provenance-manifest-105",
+  "title": "Auto provenance manifest + CI lint gate",
+  "project": "ewing-expression-reanalysis",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "cancer-research",
+    "bioinformatics",
+    "reproducibility",
+    "ewing-sarcoma",
+    "provenance"
+  ],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Provenance is promoted to a CI gate: every pipeline run auto-emits a provenance.json and the lint blocks release on incompleteness (PLAN §6/§8). This guarantees every released artefact is traceable. Binding guardrails: open-access / aggregate / de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no clinical/diagnostic/prognostic/treatment language; research-only, not medical advice; provenance on every assertion.",
+  "objective": "Auto-generate a provenance manifest per pipeline run and enforce completeness via a CI lint gate that blocks release on missing fields.",
+  "acceptanceCriteria": [
+    "Each pipeline run auto-emits a provenance.json conforming to the ratified spec.",
+    "A CI lint gate validates the manifest and blocks merge/release when fields are missing or invalid.",
+    "Manifest captures container digests, tool versions, input/output checksums, seed and parameters.",
+    "Commit is DCO signed-off; no secrets in manifests or logs."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "PLAN.md",
+    "TASKS.md"
+  ],
+  "output": "A pull request adding auto provenance-manifest generation and a CI lint gate.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
