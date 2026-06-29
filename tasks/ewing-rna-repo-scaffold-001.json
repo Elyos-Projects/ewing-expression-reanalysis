@@ -1,0 +1,35 @@
+{
+  "id": "ewing-rna-repo-scaffold-001",
+  "title": "Scaffold reproducible repo + CI on a synthetic fixture",
+  "project": "ewing-expression-reanalysis",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "bioinformatics", "reproducibility", "ewing-sarcoma"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Cold-start for a reproducible reanalysis project over PUBLIC, open-access Ewing Sarcoma transcriptomes. Binding guardrails: open/aggregate/de-identified data only; controlled-access (dbGaP/EGA/biobanks) and identifiable patient data are out of scope; COSMIC/OncoKB/MSigDB-restricted are recipe-reference only; no medical advice; provenance on every assertion. This task builds only the empty, license-clean scaffold and CI — no real patient data is touched.",
+  "objective": "Create the repository skeleton (Nextflow/R/Python pipeline dir + TypeScript/ESM Elyos glue), governance/license files, and a GitHub Actions CI workflow that runs build + lint and pushes a tiny synthetic/subsampled fixture through a pipeline stub to green.",
+  "acceptanceCriteria": [
+    "Repo skeleton committed: pipeline directory, Elyos TS/ESM glue, README, LICENSE (MIT), SECURITY.md, and a research-only / not-medical-advice responsible-use note.",
+    "GitHub Actions CI runs build, lint, and a synthetic/subsampled fixture through the pipeline stub and passes (green).",
+    "No container uses a ':latest' tag; container references are pinned by digest where present.",
+    "No secrets, tokens, or API keys appear in the repo, logs, or CI output.",
+    "Provenance-manifest and datasheet placeholders are present and referenced by the README.",
+    "Commit is DCO signed-off (git commit -s)."
+  ],
+  "resources": [
+    "C:/code/elyos/CLAUDE.md",
+    "C:/code/elyos/docs/good-deed-definition.md",
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "planning/projects/ewing-expression-reanalysis/PLAN.md",
+    "https://nf-co.re/rnaseq"
+  ],
+  "output": "A pull request adding the reproducible repository scaffold and a green CI workflow running a synthetic fixture end-to-end.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
